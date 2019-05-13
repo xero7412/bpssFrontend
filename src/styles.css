@@ -1,14 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .combined-shape-copy {
-	height: 964.8px;
-    
 	background: linear-gradient(180deg, #077DFC 0%, #0772E6 100%);
 	box-shadow: 0 4px 7px 0 rgba(4,64,128,0.45);
 }
 
 .combined-shape {
-	height: 964.8px;
-
 	background-color: #077DFC;
 	box-shadow: 0 0 11px 0 rgba(186,188,191,0.5);
 }
@@ -16,12 +12,10 @@ p{
     font-size: 16px;
 }
 .background {
-	height: 1080.66px;
 
 	background-color: #F2F6FA;
 }
 .mask {
-	height: 1080px;
 	
 	background-color: #D8D8D8;
 }
@@ -111,13 +105,13 @@ hr {
 }
 .tag-container-blue {
     
-        height: 30.73px;
-        width: relative;
-        border: 1.44px solid #007AFF;
-        border-radius: 3.23px;
-        background-color: #FFFFFF;
-        color:#007AFF;
-    
+    height: 30.73px;
+    width: relative;
+    border: 1.44px solid #007AFF;
+    border-radius: 3.23px;
+    background-color: #FFFFFF;
+    color:#007AFF;
+
 }
 .align-right{
     
@@ -157,7 +151,7 @@ ul{
 .bg-col{
     background-color: rgba(255,255,255,0.2);
     border-radius:25px 25px;
-    padding:5px;
+    padding:10px;
     font-size: 14px;
 }
 .vl {
