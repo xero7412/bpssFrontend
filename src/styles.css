@@ -1,1 +1,192 @@
 /* You can add global styles to this file, and also import other style files */
+.combined-shape-copy {
+	height: 964.8px;
+    
+	background: linear-gradient(180deg, #077DFC 0%, #0772E6 100%);
+	box-shadow: 0 4px 7px 0 rgba(4,64,128,0.45);
+}
+
+.combined-shape {
+	height: 964.8px;
+
+	background-color: #077DFC;
+	box-shadow: 0 0 11px 0 rgba(186,188,191,0.5);
+}
+p{
+    font-size: 16px;
+}
+.background {
+	height: 1080.66px;
+
+	background-color: #F2F6FA;
+}
+.mask {
+	height: 1080px;
+	
+	background-color: #D8D8D8;
+}
+.row{
+    padding: 20px;
+}
+.navbar {	
+    height: 32px;	
+   
+    
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.search_icon{
+   
+    
+    display: inline;
+    
+    border-radius: 50%;
+    color:white;
+}
+
+.containerSearch input {
+	height: 30.73px;
+    width: 258.79px;
+    border:0;
+	border-radius: 2.88px;
+    background-color: rgba(255,255,255,0.2);
+    align-items: center;
+    color: rgba(255,255,255,0.75);
+    
+}
+.nav-item-search{
+        align-content: left;
+        height: 15px;
+        color: rgba(255,255,255,0.75);
+        padding: 5px;
+        font-size: 12.32px;
+        font-weight: 300;
+        letter-spacing: -0.07px;
+        line-height: 14px;  
+}
+.nav-item{
+    height: relative;
+    text-align: right;
+    box-sizing: border-box;	
+    color: white;
+    padding:3px;
+}
+#overlay {
+   font-size: 10px;
+    position: absolute;
+    padding-bottom: 30px;
+    
+}
+a {
+    color: white
+}
+.navbar-ver{
+    padding-top:80%;
+}
+
+hr { 
+    margin-top: 100%;
+    border-width: 2px;
+    background-color: white;
+    position: relative;
+    display: block;
+  }
+.container {
+    box-sizing: border-box;
+    height: relative;
+    width: relative;
+    border: 1.08px solid #EFEFEF;
+    border-radius: 3.23px;
+    background-color: #FFFFFF;
+    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.01), 0 11px 36px 0 rgba(48,48,48,0.16);
+    font-size: 13px;
+}
+.tag-container {
+    font-size:14px;  
+    height: 26px;
+	border: 1.08px solid #FFA900;
+	border-radius: 50px;
+    background-color: rgba(255,169,0,0.1);
+    color: #FFA900
+}
+.tag-container-blue {
+    
+        height: 30.73px;
+        width: relative;
+        border: 1.44px solid #007AFF;
+        border-radius: 3.23px;
+        background-color: #FFFFFF;
+        color:#007AFF;
+    
+}
+.align-right{
+    
+    margin-left:  auto;
+    margin-right: 0;
+}
+.p1{
+    font-size: 10px;
+    color: rgba(138, 142, 145, 0.903)
+}
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: white;
+    font-size:12px;
+    padding:5px;
+   
+}
+.hr1{
+    box-sizing: border-box;
+    height: 0.81px;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+}
+
+ul{
+    padding: 0%;
+    margin:0px;
+}
+.span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;
+}
+.navbar-bottom {
+    margin-top:150%
+  }
+.bg-col{
+    background-color: rgba(255,255,255,0.2);
+    border-radius:25px 25px;
+    padding:5px;
+    font-size: 14px;
+}
+.vl {
+    border-left: 2px solid white;
+    height:16px;
+    opacity:0.2;
+  }
+.material-icons{
+    font-size:20px;
+    color:white
+}
+.content-heading{
+    color:#51516B;
+ 
+}
+.si{
+    height: 90px;
+    width: 130px;
+}
+.content-heading2{
+    float: right;
+    padding-right:5px;
+    font-size: 10px;
+    color:#979EA6 
+}
+.link2{
+    color:#51516B;
+}
+a:hover{
+    color:#51516B;
+    text-decoration: none;
+}

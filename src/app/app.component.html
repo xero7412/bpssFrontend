@@ -1,21 +1,96 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!--HTML Component responsible for Inventory List-->
 
-<router-outlet></router-outlet>
+<div class="row" style="width:550px;">
+    Total items in inventory
+    <div class="align-right"><button class="tag-container-blue" >get summary</button> </div></div>
+    <b><span class="hdTotalItems"> 1,508</span></b> items
+    <div class="row">
+    <div class="progress" style="width:45%;height:12px;">
+        <div class="progress-bar" style="width:40%;background-color:#4CD964">
+         
+        </div>
+        <div class="progress-bar" style="width:10%;background-color:#007AFF">
+          
+        </div>
+        <div class="progress-bar" style="width:20%;background-color:#FF00C7">
+         
+        </div>
+        <div class="progress-bar" style="width:20%;background-color:#FFCC00">
+           
+          </div>
+          <div class="progress-bar" style="width:20%;background-color:#D141EF">
+            
+          </div>
+          
+      </div>
+      <div class="align-right">
+        <img src="./assets/images/plus.svg">&nbsp;
+        <a href="#">Create labels</a>&nbsp;
+        <img src="./assets/images/plus.svg">&nbsp;
+        <a href="#">Hide labels</a>
+    
+    </div>
+    
+    </div>
+      <hr>
+    <div class="row" style="justify-content: space-between;padding-bottom:0px;">
+        <div >
+            <span class="dot" style="background-color:#4CD964 "></span>
+            <b> &nbsp;Laptops</b>  <br>
+            <p class="align2">326</p>
+        </div>
+        <div>
+            <span class="dot" style="background-color:#007AFF "></span>
+            <b>&nbsp;Mouse</b> <br>
+            <p class="align2">326</p>
+            
+        </div>
+        <div>
+                <span class="dot" style="background-color:#FF00C7 "></span>
+                <b>&nbsp;Desktop</b> <br>
+                <p class="align2">326</p>
+        </div>
+        <div>
+                <span class="dot" style="background-color:#FFCC00 "></span>
+                <b>&nbsp;Keyboard</b> <br>
+                <p class="align2">326</p>
+        </div>
+        <div>
+                <span class="dot" style="background-color:#D141EF "></span>
+                <b>&nbsp;Printer</b><br>
+                <p class="align2">326</p>
+        </div>
+    </div>
+    <div class="row">
+            <b style="color:rgb(95, 100, 104)">Recently added </b><span style="color:#979EA6">(25 items)</span>  
+        <div class="align-right">
+            <a href="#" class="link">View all recent items</a>
+        
+        </div>
+    </div>
+
+    <table *ngIf="arrInventory" class="table table-striped">
+      <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name </th>
+            <th>Qty.</th>
+            <th>Type </th>
+            <th>Time </th>
+                  
+        </tr>
+    </thead>
+    <tbody>
+        <!-- BIND ARRAY TO TABLE -->
+        <tr *ngFor="let Inv of arrInventory">
+            <td>{{Inv.itemId}}</td>
+            <td>{{Inv.name}}</td>
+            <td>{{Inv.quantity}}</td>
+            <td>{{Inv.type}}</td>
+            <td>{{Inv.time}}</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+

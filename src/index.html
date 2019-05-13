@@ -4,11 +4,170 @@
   <meta charset="utf-8">
   <title>BpssFrontend</title>
   <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <!--CSS-->
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-  <app-root></app-root>
-</body>
+<body class="combined-shape-copy combined-shape background mask">
+    <div class="row">
+        <div class="col-2">
+        <nav class="navbar-expand-sm" style="color:white;font-size: 22px;">
+        <!-- Brand/logo -->
+         <a href="#"> <img src="assets/images/Logo mark.svg" alt="logo" style="width:30px;"> Better </a>
+        </nav>
+        <nav class="navbar navbar-ver">
+            <ul class="navbar-nav">
+              <li class="nav-item-ver">
+                <a class="nav-link" href="#"> <img src="assets/images/dashboard.svg">&nbsp; Dashboard</a>
+              </li>
+              <li class="nav-item-ver">
+                <a class="nav-link" href="#"><img src="assets/images/credit-card.svg">&nbsp;Tickets</a>
+              </li>
+              <li class="nav-item-ver">
+                <a class="nav-link" href="#"><img src="assets/images/package.svg">&nbsp;Inventory</a>
+              </li>
+              <li class="nav-item-ver">
+                  <a class="nav-link" href="#"><img src="assets/images/user.svg">&nbsp;User</a>
+                </li>
+            </ul>
+          </nav>
+          <hr>
+          <nav class="navbar navbar-ver navbar-bottom">
+            <ul class="navbar-nav">      
+                <a class="nav-link" href="#"> <img src="assets/images/settings.svg">&nbsp;Settings</a>
+                <span class="hr1" style="width:200%"></span>
+                <li class="nav-item-ver">
+                  <a class="nav-link" href="#">Tickets</a>
+                </li>
+                <li class="nav-item-ver">
+                  <a class="nav-link" href="#">Inventory</a>
+                </li>
+                <li class="nav-item-ver">
+                  <a class="nav-link" href="#">User</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-6">
+        <div class="containerSearch">
+            <input type="text" placeholder="Search inventory, users…">
+            <a href="#" class="search_icon"><img src="assets/images/Search icon.svg"></a> 
+        </div>
+        <br>
+        <div class="container">
+          <div class="row" style="color: rgb(138, 142, 145);font-size:12px">
+             <div class="span4"> <img class="img-left si" src="assets/images/pic.PNG">
+              <p style="color: #51516B;" class="font-weight-bold">Anniversary celebration 2018
+                <span style="float:right"><button class="tag-container">3 days to go</button> </span>
+              </p>
+              <p class="p1" > Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat
+                (the second one from forward), it was my cheerful duty to attend upon him while taking
+                 that hard-scrabble scramble upon the dead whale's back.
+                You have seen Italian organ-boys holding a dancing-ape by a long cord… 
+                <a href="#" style="color:#007AFF">Learn more</a> 
+              </p>
+            </div>
+            <div class="hr1"></div><br>
+         
+            <img src="assets/images/clock.svg"> &nbsp; 23 October 2018, 10:00AM
+            <div class="align-right">
+              <a href="#" class="link2"> <img src="assets/images/share.svg"> Share</a> &nbsp; &nbsp;
+              <a href="#" class="link2"> Save</a> &nbsp; &nbsp;
+              <a href="#" class="link2"> More </a>
+            </div> 
+          </div>   
+        </div>
+        <br>
+        <h5 style="color:white">Inventory overview</h5>
+        <p style="font-size:12px;color:white">Get a bird’s eye view of your inventory’s activities.
+          <a href="#" style=" text-decoration: underline;">Learn more</a> </p>
+        <div class="container">
+          <div class="row" style="padding-bottom:0px">
+            <app-root></app-root>
+          </div>
+        </div>
+        </div>
+        <br>
+
+        <div class="col-4">
+         <div style="float: right;color:white;">
+            <a href="#"><i class="material-icons">messenger</i></a> &nbsp;
+            <a href="#"><i class="material-icons">notifications_none</i></a>&nbsp;
+            <a href="#"><i class="material-icons" style="height:relative;padding-top:6px;">help_outline</i>
+              <span style="padding:-5px;align-content: top;font-size: 12px;">Help </span> 
+            </a> &nbsp; <span class="vl"></span>&nbsp;
+          <div style="font-size: 14px;display:inline;" id = "overlay">
+            Michael tucker
+          </div>
+          <span style="font-size: 10px;display:inline;padding-right: 30px;text-align:left"> Administrator</span>
+            &nbsp;
+            <a href="#"> <span class="bg-col">MT</span> </a>&nbsp;
+            <a href="#"><img src="assets/images/Click signifier.svg"></a>
+          </div>
+        <br>
+        <br> 
+      
+        <div class="container" style="color:#979EA6;">    
+          <div class="row">
+           <b style="color:#AEB8C2"> Pending Tickets</b>
+            <div class="align-right"><button class="tag-container-blue" >See All</button> </div>
+            <p id="overlay" style="margin-top:14px;color: #51516B ">27 Uresolved Issue</p>
+          </div>
+          <div class="span4">
+            <img class="img-left" src="assets/images/Oval.svg">
+            <div class="content-heading"><b>Anaru Hakopa </b>
+              <div class="content-heading2">2 days ago</div>
+            </div>
+            <p style="font-size: 10px;">It was a humorously perilous business for both of us. 
+            For, before we proceed further, it must be said that the…more</p>
+          </div>
+          <div class="hr1"></div> <br>
+          <div class="span4">
+            <img class="img-left" src="assets/images/Oval.svg">
+            <div class="content-heading"><b>Anaru Hakopa</b> 
+              <div class="content-heading2">2 days ago</div> 
+            </div>
+            <p style="font-size: 10px">It was a humorously perilous business for both of us. 
+              For, before we proceed further, it must be said that the…more</p>
+          </div>
+
+          <div class="hr1"></div> <br>
+          <div class="span4">
+            <img class="img-left" src="assets/images/Oval.svg">
+            <div class="content-heading"><b>Anaru Hakopa </b>
+              <div class="content-heading2">2 days ago</div>
+            </div>
+            <p style="font-size: 10px">It was a humorously perilous business for both of us. 
+              For, before we proceed further, it must be said that the…more</p>
+          </div>
+          <div class="hr1"></div> <br>
+          <div class="span4">
+            <img class="img-left" src="assets/images/Oval.svg">
+            <div class="content-heading"><b>Anaru Hakopa</b>
+               <div class="content-heading2">2 days ago</div></div>
+            <p style="font-size: 10px">It was a humorously perilous business for both of us. 
+              For, before we proceed further, it must be said that the…more</p>
+          </div>
+          <div class="hr1"></div> <br>
+          <div class="span4">
+            <img class="img-left" src="assets/images/Oval.svg">
+            <div class="content-heading"><b>Anaru Hakopa</b>
+               <div class="content-heading2">2 days ago</div>
+            </div>
+            <p style="font-size: 10px">It was a humorously perilous business for both of us. 
+              For, before we proceed further, it must be said that the…more</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </body>
 </html>
